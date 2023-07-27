@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/citas.css">
+    <title>Citas</title>
+</head>
+
+<body>
+    <header>
+        <div class="barra">
+            <nav class="barra2">
+                <ul>
+                    <a href="cliente.html"> <b>CLIENTE</b></a>
+                    <a href="perfil.html"> <b>PERFIL</b> </a>
+                    <a href="mascotas.html"> <b>MASCOTAS</b></a>
+                    <a href="reportes.html"> <b>REPORTES </b></a>
+                    <a href="citas.html"> <b>CITAS </b></a>
+                    <a href="productos.html"> <b>PRODUCTOS </b></a>
+                    <a href="#"><img class="salir" src="imagenes/Otras/support.png" alt=""></a>
+                    <a href="index.html"><img class="salir" src="imagenes/Otras/logout.png" alt=""></a>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="general">
+        <section class="galer">
+            <img src="imagenes/Mascotas/mascota1.jpg" alt="">
+            <img src="imagenes/Mascotas/mascota2.jpg" alt="">
+            <img src="imagenes/Mascotas/mascota3.jpg" alt="">
+            <img src="imagenes/Mascotas/mascota4.jpg" alt="">
+            <img src="imagenes/Mascotas/mascota5.jpg" alt="">
+        </section>
+
+        <div class="container">
+            <h1 class="soli">Solicitud de Citas</h1>
+            <form>
+                <label for="name"><strong>Usuario:</strong></label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="name"><strong>Mascota:</strong></label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="name"><strong>Tipo de cita:</strong></label>
+                <input type="checkbox" id="opcion1" name="opcion1" value="opcion1">
+                <label for="opcion1">Corte de cabello</label><br>
+
+                <label for="email"><strong>Email:</strong></label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone"><strong>Teléfono</strong>:</label>
+                <input type="text" id="phone" name="phone" required>
+
+                <label for="date"><strong>Fecha de la cita:</strong></label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="time"><strong>Hora de la cita:</strong></label>
+                <input type="time" id="time" name="time" required>
+
+                <label for="message"><strong>Mensaje adicional:</strong></label>
+                <textarea id="message" name="message"></textarea>
+
+                <button class="button">
+                    <span class="button_lg">
+                        <span class="button_sl"></span>
+                        <span class="button_text">Registrar Cita</span>
+                    </span>
+                </button>
+
+                <button class="button">
+                    <span class="button_lg">
+                        <span class="button_sl"></span>
+                        <span class="button_text">Cancelar</span>
+                    </span>
+                </button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,329 @@
+@import url('https://fonts.cdnfonts.com/css/poppins');
+
+body {
+
+    justify-content: center;
+    background-repeat: no-repeat;
+    align-items: center;
+    height: 100vh;
+    background-size: cover;
+}
+
+img {
+
+    width: 100vh;
+    object-fit: cover;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+}
+
+section {
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+
+}
+
+.todo {
+    height: 100vh;
+    padding: 10%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 61.9vh;
+}
+
+
+
+/*LOgin*/
+.form-value {
+
+
+    position: relative;
+    width: 60vh;
+    height: 80vh;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.56);
+    backdrop-filter: blur(1px);
+    border-radius: 20px 0 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.7s;
+}
+
+
+
+.form-box {
+
+    z-index: 9999;
+    position: relative;
+    width: 60vh;
+    height: 80vh;
+    background: transparent;
+    border-radius: 20px 0 20px 0;
+    backdrop-filter: blur(6px);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.1s;
+}
+
+.form-box:hover {
+
+    backdrop-filter: blur(25px);
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.651);
+}
+
+
+
+h2 {
+    font-size: 2em;
+    color: white;
+    text-align: center;
+}
+
+.input-box {
+
+    position: relative;
+    margin: 30px 0;
+    width: 45vh;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 2.5vh;
+}
+
+.input-box input {
+    width: 40vh;
+    height: 7vh;
+    background: transparent;
+    border: none;
+
+    font-size: 2vh;
+    padding: 0 35px 0 20px;
+    color: transparent;
+}
+
+input:focus~label,
+input:valid~label {
+    top: -1vh;
+
+}
+
+
+input:invalid:focus,
+input:valid {
+    color: #ffffff;
+}
+
+.input-box .icon {
+
+    position: absolute;
+    right: 2vh;
+    color: #fff;
+    font-size: 1.2em;
+    top: 20px;
+}
+
+.forget {
+
+    margin: -15px 0 15px;
+    font-size: 2vh;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+.forget label input {
+    margin-right: 4vh;
+}
+
+.forget label a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.forget label a:hover {
+    text-decoration: underline;
+
+}
+
+.register {
+    font-size: .9em;
+    color: #fff;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+
+.register p a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+.register p a:hover {
+    text-decoration: underline;
+}
+
+/*Efecto del button*/
+.btn {
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background-color: #001341;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+button:hover {
+    color: black;
+}
+
+button::after {
+    content: "";
+    background-color: #E4F2FE;
+    position: absolute;
+    z-index: -1;
+    left: -20%;
+    right: -20%;
+    top: 0;
+    bottom: 0;
+    transform: skewX(-45deg) scale(0, 1);
+    transition: all 0.5s;
+}
+
+button:hover::after {
+    transform: skewX(-45deg)scale(1, 1);
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+/*Efecto olas*/
+@keyframes move_wave {
+    0% {
+        transform: translateX(0) translateZ(0) scaleY(1)
+    }
+
+    50% {
+        transform: translateX(-25%) translateZ(0) scaleY(0.55)
+    }
+
+    100% {
+        transform: translateX(-50%) translateZ(0) scaleY(1)
+    }
+}
+
+.waveWrapper {
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+
+}
+
+.waveWrapperInner {
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+    bottom: -1px;
+    background: linear-gradient(-45deg, #000547, #0306ac, #1280e7, #00a6f3);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+}
+
+.bgTop {
+    z-index: 15;
+    opacity: 0.5;
+}
+
+.bgMiddle {
+    z-index: 10;
+    opacity: 0.75;
+}
+
+.bgBottom {
+    z-index: 5;
+}
+
+.wave {
+    position: absolute;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    background-repeat: repeat no-repeat;
+    background-position: 0 bottom;
+    transform-origin: center bottom;
+}
+
+.waveTop {
+    background-size: 50% 100px;
+}
+
+.waveAnimation .waveTop {
+    animation: move-wave 3s;
+    -webkit-animation: move-wave 3s;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
+.waveMiddle {
+    background-size: 50% 120px;
+}
+
+.waveAnimation .waveMiddle {
+    animation: move_wave 10s linear infinite;
+}
+
+.waveBottom {
+    background-size: 50% 100px;
+}
+
+.waveAnimation .waveBottom {
+    animation: move_wave 15s linear infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+
+    100% {
+        background-position: 0% 50%;
+    }
+}

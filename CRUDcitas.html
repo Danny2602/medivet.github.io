@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+		integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+		integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/stylecrudcitas.css">
+	<link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+
+	<title>Gestión Citas</title>
+
+
+</head>
+
+
+<header>
+	<div class="barra">
+		<nav class="barra2">
+			<ul>
+				<a href="elecion.html"> <b>REGRESAR LOGIN</b></a>
+				<a href="Empleados.html"> <b>REGRESAR MENU</b> </a>
+				<a href="index.html"> <b>CERRAR SECION</b></a>
+			</ul>
+		</nav>
+	</div>
+</header>
+
+<body>
+
+	<div id="app" class="container-fluid h-100">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="content-wrapper col">
+				<div class="table-wrapper">
+					<div class="table-title">
+						<div class="row">
+							<div class="col-sm-6">
+								<h2>Administrar <b>Citas</b></h2>
+							</div>
+							<div class="col-sm-6">
+								<a href="#addEmployeeModal" class="btn btn-success" data-toggle="modal"><i
+										class="fas fa-plus-circle"></i><span>Nuevo </span></a>
+								<a href="#deleteEmployeeModal" class="btn btn-danger" data-toggle="modal"><i
+										class="fas fa-minus-circle"></i><span>Eliminar</span></a>
+							</div>
+						</div>
+					</div>
+					<table class="table table-striped table-hover">
+						<thead>
+							<tr>
+								<th></th>
+								<th>Código</th>
+								<th>Nombre</th>
+								<th>fecha</th>
+								<th>Estado</th>
+								<th>Acciones</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<span class="custom-checkbox">
+										<input type="checkbox" id="checkbox1" name="options[]" value="1">
+										<label for="checkbox1"></label>
+									</span>
+								</td>
+								<td>001</td>
+								<td>Leandro Suntaxi</td>
+								<td>16/03/2021</td>
+								<td>Activo</td>
+								<td>
+									<a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="fas fa-pen"
+											data-toggle="tooltip" title="Editar"></i></a>
+									<a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i
+											class="fas fa-trash" data-toggle="tooltip" title="Eliminar"></i></a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<span class="custom-checkbox">
+										<input type="checkbox" id="checkbox1" name="options[]" value="1">
+										<label for="checkbox1"></label>
+									</span>
+								</td>
+								<td>001</td>
+								<td>Leandro Suntaxi</td>
+								<td>16/03/2021</td>
+								<td>Activo</td>
+								<td>
+									<a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="fas fa-pen"
+											data-toggle="tooltip" title="Editar"></i></a>
+									<a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i
+											class="fas fa-trash" data-toggle="tooltip" title="Eliminar"></i></a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<span class="custom-checkbox">
+										<input type="checkbox" id="checkbox1" name="options[]" value="1">
+										<label for="checkbox1"></label>
+									</span>
+								</td>
+								<td>001</td>
+								<td>Leandro Suntaxi</td>
+								<td>16/03/2021</td>
+								<td>Activo</td>
+								<td>
+									<a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="fas fa-pen"
+											data-toggle="tooltip" title="Editar"></i></a>
+									<a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i
+											class="fas fa-trash" data-toggle="tooltip" title="Eliminar"></i></a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<span class="custom-checkbox">
+										<input type="checkbox" id="checkbox1" name="options[]" value="1">
+										<label for="checkbox1"></label>
+									</span>
+								</td>
+								<td>001</td>
+								<td>Leandro Suntaxi</td>
+								<td>16/03/2021</td>
+								<td>Activo</td>
+								<td>
+									<a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="fas fa-pen"
+											data-toggle="tooltip" title="Editar"></i></a>
+									<a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i
+											class="fas fa-trash" data-toggle="tooltip" title="Eliminar"></i></a>
+								</td>
+							</tr>
+							</tr>
+							<tr>
+								<td>
+									<span class="custom-checkbox">
+										<input type="checkbox" id="checkbox1" name="options[]" value="1">
+										<label for="checkbox1"></label>
+									</span>
+								</td>
+								<td>001</td>
+								<td>Leandro Suntaxi</td>
+								<td>16/03/2021</td>
+								<td>Activo</td>
+								<td>
+									<a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="fas fa-pen"
+											data-toggle="tooltip" title="Editar"></i></a>
+									<a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i
+											class="fas fa-trash" data-toggle="tooltip" title="Eliminar"></i></a>
+								</td>
+							</tr>
+							</tr>
+							<tr>
+								<td>
+									<span class="custom-checkbox">
+										<input type="checkbox" id="checkbox1" name="options[]" value="1">
+										<label for="checkbox1"></label>
+									</span>
+								</td>
+								<td>001</td>
+								<td>Leandro Suntaxi</td>
+								<td>16/03/2021</td>
+								<td>Activo</td>
+								<td>
+									<a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="fas fa-pen"
+											data-toggle="tooltip" title="Editar"></i></a>
+									<a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i
+											class="fas fa-trash" data-toggle="tooltip" title="Eliminar"></i></a>
+								</td>
+							</tr>
+
+							<tr>
+								<td>
+									<span class="custom-checkbox">
+										<input type="checkbox" id="checkbox1" name="options[]" value="1">
+										<label for="checkbox1"></label>
+									</span>
+								</td>
+								<td>001</td>
+								<td>Leandro Suntaxi</td>
+								<td>16/03/2021</td>
+								<td>Activo</td>
+								<td>
+									<a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="fas fa-pen"
+											data-toggle="tooltip" title="Editar"></i></a>
+									<a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i
+											class="fas fa-trash" data-toggle="tooltip" title="Eliminar"></i></a>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="clearfix">
+						<div class="hint-text">Mostrando <b>5</b> de <b>25</b> registros</div>
+						<ul class="pagination">
+							<li class="page-item disabled"><a href="#">Anterior</a></li>
+							<li class="page-item"><a href="#" class="page-link">1</a></li>
+							<li class="page-item"><a href="#" class="page-link">2</a></li>
+							<li class="page-item active"><a href="#" class="page-link">3</a></li>
+							<li class="page-item"><a href="#" class="page-link">4</a></li>
+							<li class="page-item"><a href="#" class="page-link">5</a></li>
+							<li class="page-item"><a href="#" class="page-link">Siguiente</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+</body>
+
+</html>

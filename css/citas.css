@@ -1,0 +1,266 @@
+body{
+  background-color: #00396c;
+}
+.barra {
+
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  font-family: monospace;
+  justify-content: right;
+
+}
+.salir{
+  width: 30px;
+  height: 25px;
+}
+
+.barra2 {
+  position: fixed;
+  z-index: 9999;
+  top: 1;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(8, 10, 129, 1) 21%, rgba(1, 27, 231, 1) 35%, rgba(2, 162, 222, 1) 57%, rgba(0, 212, 255, 1) 82%, rgba(9, 78, 121, 1) 100%);
+  height: 5vh;
+  border-radius: 50px;
+  padding: 10px;
+  box-shadow: 0 30px 70px -20px rgba(0, 0, 0, 0.4);
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  transition: 0.7s;
+
+}
+
+.barra2 ul a {
+
+  list-style: none;
+  display: inline-grid;
+  padding: 0.5vh 5vh;
+  margin: 10px;
+  font-size: 2vh;
+  font-weight: 200vh;
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+  transition: color 0.3s;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.barra2 ul a::after {
+  content: "";
+  background: rgb(255, 255, 255);
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  opacity: 0;
+}
+
+.barra2 ul a:hover {
+  color: rgb(0, 0, 0);
+}
+
+.barra2 ul a:hover::after {
+  top: 50%;
+  opacity: 1;
+  transition: 0.4s;
+}
+/*Fotos bonitas*/
+.galer{
+    display: flex;
+    width: 600px;
+    height: 430px;
+    margin-top: 200px;
+    margin-left: 50px;
+}
+.galer img{
+    width: 0;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+.galer img:hover{
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+  .container {
+    max-width: 550px;
+    height: 750px;
+    margin: 0 auto;
+    background: linear-gradient(to bottom, rgb(255, 255, 255) 0%, rgba(2, 162, 222, 1) 57%, rgba(0, 212, 255, 1) 82%, rgba(9, 78, 121, 1) 100%);
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(3.2px);
+    -webkit-backdrop-filter: blur(3.5px);
+    border: 3px solid rgba(255, 255, 255, 0.42);
+  }
+
+  .soli {
+    font-family: monospace;
+        text-align: center;
+    overflow: hidden;
+    border-right: .15em solid rgb(0, 0, 0); /* Cambia el color y el grosor del cursor */
+    white-space: nowrap; /* Evita el salto de línea */
+    margin: 0 auto; /* Centra horizontalmente el elemento */
+    letter-spacing: .15em; /* Espaciado entre letras */
+    animation:
+      escribir-maquina 5s steps(40) 1s infinite;
+  }
+  
+  @keyframes escribir-maquina {
+    from { width: 0; }
+    to { width: 100%; }
+  
+  }
+
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+.general{
+  display: flex;
+}
+
+/*Efecto boton de registrar cita*/
+.button {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+    background: none;
+    color: #0f1923;
+    cursor: pointer;
+    position: relative;
+    padding: 20px;
+    display: table-column;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    transition: all .15s ease;
+    width: 550px;
+  }
+  
+  .button::before,
+  .button::after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    left: 0;
+    height: calc(50% - 5px);
+    border: 1px solid #7D8082;
+    transition: all .15s ease;
+  }
+  
+  .button::before {
+    top: 0;
+    border-bottom-width: 0;
+  }
+  
+  .button::after {
+    bottom: 0;
+    border-top-width: 0;
+  }
+  
+  .button:active,
+  .button:focus {
+    outline: none;
+  }
+  
+  .button:active::before,
+  .button:active::after {
+    right: 3px;
+    left: 3px;
+  }
+  
+  .button:active::before {
+    top: 3px;
+  }
+  
+  .button:active::after {
+    bottom: 3px;
+  }
+  
+  .button_lg {
+    position: relative;
+    display: block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #0f1923;
+    overflow: hidden;
+    box-shadow: inset 0px 0px 0px 1px transparent;
+  }
+  
+  .button_lg::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 2px;
+    background-color: #0f1923;
+  }
+  
+  .button_lg::after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 4px;
+    height: 4px;
+    background-color: #0f1923;
+    transition: all .2s ease;
+  }
+  
+  .button_sl {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: -1px;
+    left: -8px;
+    width: 0;
+    background-color: #680808;
+    transform: skew(-15deg);
+    transition: all .2s ease;
+  }
+  
+  .button_text {
+    position: relative;
+  }
+  
+  .button:hover {
+    color: #0f1923;
+  }
+  
+  .button:hover .button_sl {
+    width: calc(100% + 15px);
+  }
+  
+  .button:hover .button_lg::after {
+    background-color: #fff;
+  }
+
+
+
+/*FIN Efecto boton de registrar cita*/
+
+
+
+
+
